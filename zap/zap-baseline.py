@@ -324,7 +324,7 @@ def main(argv):
         zap_wait_for_passive_scan(zap, timeout * 60)
 
         # Print out a count of the number of urls
-        num_urls = len(zap.core.urls())
+        num_urls = len(zap.core.urls)
         if num_urls == 0:
             logging.warning('No URLs found - is the target URL accessible? Local services may not be accessible from the Docker container')
         else:
